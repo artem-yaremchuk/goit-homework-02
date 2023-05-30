@@ -4,11 +4,18 @@
     --hero-footer-background-color: #2E2F42;
     --team-background-color: #F4F4FD;
     --footer-text-color: #F4F4FD;
+    --body-background-color: #FFFFFF;
+    --logo-color:  #4d5ae5;
+    --header-span-color: #2e2f42;
+    --footer-span-color:  #f4f4fd;
+    --body-portfolio-color: #434455;
 }
-
+/**---------Index----------*/
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
+    color: #434455;
+    background-color: var(--body-background-color);
 }
 
 .link {
@@ -22,16 +29,17 @@ body {
 /**---------HEADER----------*/
 
 .header-logo, .footer-logo {
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     font-weight: 800;
     font-size: 18px;
     line-height: 1.17;
     letter-spacing: 0.03em;
-    color: #2E2F42;
+    color: var(--logo-color);
+    text-transform: uppercase;
 }
 
-.header-logo span, .footer-logo span {
-    color: #4D5AE5;
+.header-logo span {
+    color: var(--header-span-color;)
 }
 
 .header-menu-link {
@@ -46,8 +54,10 @@ body {
     color: #404BBF;
 }
 
-.header-address-link {
+.header-address {
     font-style: normal;
+}
+.header-address-link {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--main-text-color);
@@ -65,11 +75,12 @@ body {
 }
 
 .hero-title {
-font-weight: 700;
-font-size: 56px;
-line-height: 1.07;
-letter-spacing: 0.02em;
-color: #FFFFFF;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    text-align: center;
 }
 
 .hero-btn {
@@ -113,6 +124,7 @@ line-height: 1.11;
 letter-spacing: 0.02em;
 text-transform: capitalize;
 color: var(--title-menu-color);
+text-align: center;
 }
 
 /**---------Team----------*/
@@ -120,6 +132,9 @@ color: var(--title-menu-color);
     background: var(--team-background-color);
 }
 
+.team-list {
+    background-color: #FFFFFF;
+}
 .team-title {
     font-weight: 700;
     font-size: 36px;
@@ -127,6 +142,7 @@ color: var(--title-menu-color);
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: var(--title-menu-color);
+    text-align: center;
 }
 
 .team-item-subtitle {
@@ -151,7 +167,13 @@ color: var(--title-menu-color);
 }
 
 .footer-logo {
-    color:#F4F4FD;
+    font-family: "Raleway", sans-serif;
+    color: var(--logo-color);
+    text-transform: uppercase;
+}
+
+.footer-logo span {
+    color: var(--footer-span-color)
 }
 
 .footer-text {
@@ -160,7 +182,55 @@ color: var(--title-menu-color);
     color: var(--footer-text-color);
 }
 
-/**---------Section portfolio----------*/
+/**---------Portfolio----------*/
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--body-portfolio-color);
+}
+/**---------Header----------*/
+
+.header-logo, .footer-logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    color: var(--logo-color);
+    text-transform: uppercase;
+}
+
+.header-logo span {
+    color: var(--header-span-color;)
+}
+
+.header-menu-link {
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--title-menu-color);
+}
+
+.header-menu-link:hover,
+.header-menu-link:focus {
+    color: #404BBF;
+}
+
+.header-address {
+    font-style: normal;
+}
+.header-address-link {
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--main-text-color);
+}
+
+.header-address-link:hover,
+.header-address-link:focus {
+    color: #404BBF;
+}
+
+/**---------Main----------*/
 
 .section-btn {
     font-family: inherit;
@@ -189,4 +259,26 @@ color: var(--title-menu-color);
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--main-text-color);
+}
+
+/**---------Footer----------*/
+
+.footer {
+    background-color: var(--hero-footer-background-color);
+}
+
+.footer-logo {
+    font-family: "Raleway", sans-serif;
+    color: var(--logo-color);
+    text-transform: uppercase;
+}
+
+.footer-logo span {
+    color: var(--footer-span-color)
+}
+
+.footer-text {
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--footer-text-color);
 }
