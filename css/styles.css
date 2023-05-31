@@ -152,10 +152,6 @@ letter-spacing: 0.02em;
 color: var(--title-menu-color);
 }
 
-.background {
-    background-color: #FFFFFF;
-}
-
 .team-item-text {
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -255,10 +251,6 @@ body {
 .section-btn:focus {
     color: #FFFFFF;
     background: #404BBF;
-}
-
-.link {
-    text-decoration: none;
 }
 
 .examples-subtitle {
